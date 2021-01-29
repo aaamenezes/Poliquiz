@@ -31,17 +31,15 @@
   ],
   "theme": {
     "colors": {
-      "purple": "#5D2645",
-      "darkPurple": "#3C1B32",
+      "lightBlue": "#686AFC",
+      "blue": "#3638B0",
+      "darkBlue": "#151663",
 
-      "orange": "#ED8C1D",
-      "darkOrange": "#AA4322",
-
-      "black": "#120912",
+      "black": "#121212",
       "white": "#FAFAFA",
       
-      "sucess": "#285C26",
-      "wrong": "#ED8C1D"
+      "sucess": "#37B061",
+      "wrong": "#FF6963"
     },
     "borderRadius": "4px"
   }

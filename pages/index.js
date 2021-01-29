@@ -1,12 +1,14 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 
 import QuizBackground from '../src/components/QuizBackground'
 import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
+import IndexHead from '../src/components/Head'
 
 import db from '../db.json'
-import GitHubCorner from '../src/components/GithubCorner'
+import Form from '../src/components/Form'
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -25,18 +27,23 @@ const QuizContainer = styled.div`
     margin: auto;
     padding: 15px;
   }
-`
+`;
 
 export default function Home() {
+
+  const [ name, setName ] = useState('')
+
   return (
+    // eslint-disable-next-line react/react-in-jsx-scope
     <QuizBackground backgroundImage={db.bg}>
+      <IndexHead />
       <QuizContainer>
         <Widget>
           <Widget.Header>
             <h1>Quiz CSS</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam architecto minus, dicta cum sit quasi ipsa aliquid voluptatibus itaque pariatur ea? Molestias ipsum architecto tempore eveniet impedit vel iste debitis!</p>
+            <Form name={name} setName={setName}/>
           </Widget.Content>
         </Widget>
         <Widget>
@@ -46,7 +53,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="#" />
+      <GithubCorner projectUrl="#" />
     </QuizBackground>
-  )
+  );
 }
