@@ -1,40 +1,21 @@
 import { useState } from 'react'
-import styled from 'styled-components'
 
 import QuizBackground from '../src/components/QuizBackground'
+import IndexHead from '../src/components/Head'
+import QuizContainer from '../src/components/QuizContainer/Index'
 import Widget from '../src/components/Widget'
+import Form from '../src/components/Form'
 import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
-import IndexHead from '../src/components/Head'
 
 import db from '../db.json'
-import Form from '../src/components/Form'
-
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import SubmitWrapper from '../src/components/Button/Index'
 
 export default function Home() {
 
   const [ name, setName ] = useState('')
 
   return (
-    // eslint-disable-next-line react/react-in-jsx-scope
     <QuizBackground backgroundImage={db.bg}>
       <IndexHead />
       <QuizContainer>

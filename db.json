@@ -37,6 +37,10 @@
 
       "black": "#121212",
       "white": "#FAFAFA",
+
+      "lightgray": "#D3D3D3",
+      "gray": "#A9A9A9",
+      "darkgray": "#808080",
       
       "sucess": "#37B061",
       "wrong": "#FF6963"
