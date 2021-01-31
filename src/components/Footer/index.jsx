@@ -16,11 +16,11 @@ const FooterWrapper = styled.footer`
   a {
     color: ${db.theme.colors.white};
     text-decoration: none;
-    transition: .3s;
+    transition: ${db.theme.transition};
 
     &:hover,
     &:focus {
-      opacity: .5;
+      opacity: ${db.theme.opacity};;
     }
 
     span {

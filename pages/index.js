@@ -9,7 +9,6 @@ import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
 
 import db from '../db.json'
-import SubmitWrapper from '../src/components/Button/Index'
 
 export default function Home() {
 

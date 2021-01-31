@@ -3,7 +3,7 @@ import db from '../../../db.json'
 
 const Widget = styled.div`
   margin: 24px 0;
-  border: 1px solid ${db.theme.colors.black};
+  border: none;
   background-color: ${db.theme.colors.black};
   border-radius: 4px;
   overflow: hidden;
@@ -20,7 +20,7 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
-`;
+`
 
 Widget.Header = styled.header`
   display: flex;
@@ -28,7 +28,7 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${db.theme.colors.blue};
-`;
+`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px;
@@ -45,6 +45,32 @@ Widget.Content = styled.div`
      list-style: none;
      padding: 0;
    }
-`;
+`
+
+Widget.Topic = styled.a`
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: ${db.theme.borderRadius};
+  outline: 0;
+  text-decoration: none;
+  color: ${db.theme.colors.white};
+  background-color: ${db.theme.colors.darkgray};
+  cursor: pointer;
+  transition: ${db.theme.transition};
+
+  &:hover,
+  &:focus {
+    background-color: ${db.theme.colors.lightBlue};
+  }
+
+  &[data-selected=true] {
+    background-color: ${db.theme.colors.lightBlue};
+  }
+
+  &[data-reveal-correct=true] {
+    background-color: ${db.theme.colors.success};
+  }
+`
 
 export default Widget;

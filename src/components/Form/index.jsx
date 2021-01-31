@@ -19,7 +19,11 @@ export default function FormWrapper(props) {
     }}>
 
       <Input setName={props.setName} />
-      <Button name={props.name} pretext={true} text="Vamos jogar!" />
+      <Button
+        name={props.name}
+        pretext={true}
+        text="Vamos jogar!"
+        disable={props.name === 0} />
 
     </Form>
   )

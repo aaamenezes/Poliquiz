@@ -42,9 +42,11 @@
       "gray": "#A9A9A9",
       "darkgray": "#808080",
       
-      "sucess": "#37B061",
+      "success": "#37B061",
       "wrong": "#FF6963"
     },
-    "borderRadius": "4px"
+    "borderRadius": "4px",
+    "transition": ".3s",
+    "opacity": ".8"
   }
 }

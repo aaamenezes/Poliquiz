@@ -1,53 +1,68 @@
+import { useState, useEffect } from 'react'
 import QuizBackground from '../src/components/QuizBackground'
 import IndexHead from '../src/components/Head'
 import QuizContainer from '../src/components/QuizContainer/Index'
-import Widget from '../src/components/Widget'
+import QuestionWidget from '../src/components/QuestionWidget/Index'
+import LoadingWidget from '../src/components/LoadingWidget/Index'
+import ResultWidget from '../src/components/Result/Index'
 
 import db from '../db.json'
-import Button from '../src/components/Button/Index'
 
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-      <Widget.Content>
-        [Desafio do loading]
-      </Widget.Content>
-    </Widget>
-  )
+const screenStates = {
+  quiz: 'quiz',
+  loading: 'loading',
+  result: 'result'
 }
 
 export default function QuizPage() {
+
+  const [ currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [ screenState, setScreenState ] = useState(screenStates.loading)
+  const [ points, setPoints ] = useState([])
+  const question = db.questions[currentQuestionIndex]
+  const totalQuestions = db.questions.length
+
+  function addResult(point)  {
+    setPoints([ ...points, point ])
+  }
+
+  useEffect(() => {
+    // fetch() de mentira
+    setTimeout(() => {
+      setScreenState(screenStates.quiz)
+    }, 700);
+  }, [] )
+
+  const handleSubmitQuiz = () => {
+    const nextQuestion = currentQuestionIndex + 1
+    if (nextQuestion < totalQuestions) {
+      setCurrentQuestionIndex(nextQuestion)
+    } else {
+      setScreenState(screenStates.result)
+    }
+  }
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <IndexHead />
       <QuizContainer>
-        <Widget>
-          <Widget.Header>
-            <h3>Pergunta 1 de {db.questions.length}</h3>
-          </Widget.Header>
 
-          <img
-            alt="Descrição"
-            style={{
-              width: '100%',
-              height: '140px',
-              objectFit: 'cover',
-            }}
-            src="https://placehold.it/400" />
+        {screenState === screenStates.quiz && (
+          <QuestionWidget
+            question={question}
+            totalQuestions={totalQuestions}
+            questionIndex={currentQuestionIndex}
+            onSubmit={handleSubmitQuiz}
+            addResult={addResult} />
+        )}
 
-          <Widget.Content>
-            <h2>Título da Pergunta</h2>
-            <p>Descrição da Pergunta</p>
-            <Button pretext={false} text="Enviar">
-              Enviar
-            </Button>
-          </Widget.Content>
-        </Widget>
+        {screenState === screenStates.loading && (
+          <LoadingWidget />
+        )}
 
-        <LoadingWidget />
+        {screenState === screenStates.result && (
+          <ResultWidget points={points} />
+        )}
 
       </QuizContainer>
     </QuizBackground>

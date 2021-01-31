@@ -11,11 +11,11 @@ const Button = styled.button`
   outline: none;
   color: ${db.theme.colors.white};
   background-color: ${db.theme.colors.blue};
-  transition: .3s;
+  transition: ${db.theme.transition};
 
   &:focus,
   &:hover {
-    background-color: ${db.theme.colors.lightBlue};
+    background-color: ${db.theme.colors.darkBlue};
   }
 
   &:disabled {
@@ -27,11 +27,9 @@ const Button = styled.button`
 
 export default function ButtonWrapper(props) {
 
-  let vazio = props.pretext ? props.name.length === 0 : false
-
   return (
-    <Button type="submit" disabled={vazio}>
-      { vazio ? "Preencha seu nome" : props.text }
+    <Button type="submit" disabled={props.disabled}>
+      { props.text }
     </Button>
   )
 }

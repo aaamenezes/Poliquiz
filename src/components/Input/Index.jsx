@@ -11,7 +11,7 @@ const Input = styled.input`
   outline: none;
   color: ${db.theme.colors.white};
   background-color: transparent;
-  transition: .3s;
+  transition: ${db.theme.transition};
 
   &:focus,
   &:hover {
