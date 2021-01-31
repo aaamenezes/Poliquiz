@@ -12,7 +12,7 @@ export default function ResultWidget(props) {
   return (
     <Widget>
       <Widget.Header>
-        Parabéns!!!
+        <h1>Parabéns!!!</h1>
       </Widget.Header>
       <Widget.Content>
         <p>Você acertou {acertos} {acertos === 1 ? "pergunta" : "perguntas"}</p>

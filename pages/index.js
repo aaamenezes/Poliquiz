@@ -4,6 +4,7 @@ import QuizBackground from '../src/components/QuizBackground'
 import IndexHead from '../src/components/Head'
 import QuizContainer from '../src/components/QuizContainer/Index'
 import Widget from '../src/components/Widget'
+import Link from '../src/components/Link/Index'
 import Form from '../src/components/Form'
 import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
@@ -24,6 +25,34 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <Form name={name} setName={setName}/>
+          </Widget.Content>
+        </Widget>
+        <Widget>
+          <Widget.Header>
+            <h2>Quizes da galera</h2>
+          </Widget.Header>
+          <Widget.Content>
+            <ul>
+              {db.external.map(quizUrl => {
+
+                let [ projectName, githubUser ] = quizUrl
+                  .replace('https://', '')
+                  .replace('.verce.app/', '')
+                  .split('.')
+
+                return (
+                  <li key={quizUrl}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}>
+
+                      {`Projeto: ${projectName}, feito por ${githubUser}`}
+
+                    </Widget.Topic>
+                  </li>
+                )
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Widget>

@@ -4,6 +4,8 @@ import Widget from '../../components/Widget'
 import Button from '../../components/Button/Index'
 import Radio from '../Radio/Index'
 
+import BackLinkArrow from '../BackLinkArrow/Index'
+
 import Success from '../Success/Index'
 import Wrong from '../Wrong/Index'
 
@@ -17,6 +19,7 @@ export default function QuestionWidget(props) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>Pergunta {props.questionIndex + 1} de {props.totalQuestions}</h3>
       </Widget.Header>
 

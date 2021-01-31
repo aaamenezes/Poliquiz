@@ -12,6 +12,7 @@ const Button = styled.button`
   color: ${db.theme.colors.white};
   background-color: ${db.theme.colors.blue};
   transition: ${db.theme.transition};
+  cursor: pointer;
 
   &:focus,
   &:hover {
@@ -22,6 +23,7 @@ const Button = styled.button`
     border: 1px solid ${db.theme.colors.gray};
     color: ${db.theme.colors.white};
     background-color: ${db.theme.colors.gray};
+    cursor: not-allowed;
   }
 `
 

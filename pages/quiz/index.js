@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
-import QuizBackground from '../src/components/QuizBackground'
-import IndexHead from '../src/components/Head'
-import QuizContainer from '../src/components/QuizContainer/Index'
-import QuestionWidget from '../src/components/QuestionWidget/Index'
-import LoadingWidget from '../src/components/LoadingWidget/Index'
-import ResultWidget from '../src/components/Result/Index'
+import QuizBackground from '../../src/components/QuizBackground'
+import IndexHead from '../../src/components/Head'
+import QuizContainer from '../../src/components/QuizContainer/Index'
+import QuestionWidget from '../../src/components/QuestionWidget/Index'
+import LoadingWidget from '../../src/components/LoadingWidget/Index'
+import ResultWidget from '../../src/components/Result/Index'
 
-import db from '../db.json'
+import db from '../../db.json'
 
 const screenStates = {
   quiz: 'quiz',
@@ -56,13 +56,9 @@ export default function QuizPage() {
             addResult={addResult} />
         )}
 
-        {screenState === screenStates.loading && (
-          <LoadingWidget />
-        )}
+        {screenState === screenStates.loading && <LoadingWidget />}
 
-        {screenState === screenStates.result && (
-          <ResultWidget points={points} />
-        )}
+        {screenState === screenStates.result && <ResultWidget points={points}/> }
 
       </QuizContainer>
     </QuizBackground>
