@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 import QuizBackground from '../src/components/QuizBackground'
 import IndexHead from '../src/components/Head'
@@ -19,7 +20,14 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <IndexHead />
       <QuizContainer>
-        <Widget>
+        <Widget
+          as={motion.section}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' }
+          }}
+          initial="hidden"
+          animate="show" >
           <Widget.Header>
             <h1>Quiz CSS</h1>
           </Widget.Header>
@@ -27,7 +35,15 @@ export default function Home() {
             <Form name={name} setName={setName}/>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: .5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' }
+          }}
+          initial="hidden"
+          animate="show" >
           <Widget.Header>
             <h2>Quizes da galera</h2>
           </Widget.Header>
@@ -55,12 +71,28 @@ export default function Home() {
             </ul>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 1 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' }
+          }}
+          initial="hidden"
+          animate="show" >
           <Widget.Content>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam architecto minus, dicta cum sit quasi ipsa aliquid voluptatibus itaque pariatur ea? Molestias ipsum architecto tempore eveniet impedit vel iste debitis!</p>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.footer}
+          transition={{ delay: 1.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' }
+          }}
+          initial="hidden"
+          animate="show" />
       </QuizContainer>
       <GithubCorner projectUrl="#" />
     </QuizBackground>
