@@ -13,6 +13,7 @@ export default function FormWrapper(props) {
 
   return (
     <Form
+      autoComplete="off"
       onSubmit={event => {
       event.preventDefault()
       router.push(`/quiz?name=${props.name}`)

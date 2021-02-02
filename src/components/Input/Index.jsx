@@ -9,6 +9,7 @@ const Input = styled.input`
   border: 1px solid ${db.theme.colors.white};
   border-radius: 3px;
   outline: none;
+  font-weight: bold;
   color: ${db.theme.colors.white};
   background-color: transparent;
   transition: ${db.theme.transition};

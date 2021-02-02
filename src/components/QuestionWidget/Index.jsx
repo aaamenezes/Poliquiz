@@ -49,12 +49,17 @@ export default function QuestionWidget(props) {
         }}>
 
           {props.question.alternatives.map((alternative, index) => {
+
             return (
               <Widget.Topic
                 key={index}
                 as="label"
                 data-selected={selectedAlternative === index ? true : false}
-                data-reveal-correct={isQuestionSubmited && index === props.question.answer && true} >
+                data-reveal-correct={
+                  isQuestionSubmited ?
+                  (index === props.question.answer ? true : false) :
+                  ""
+                } >
                 <Radio
                   questionId={questionId}
                   setSelectedAlternative={setSelectedAlternative}

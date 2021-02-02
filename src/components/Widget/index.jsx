@@ -71,6 +71,10 @@ Widget.Topic = styled.a`
   &[data-reveal-correct=true] {
     background-color: ${db.theme.colors.success};
   }
+
+  &[data-reveal-correct=false] {
+    background-color: ${db.theme.colors.wrong};
+  }
 `
 
 export default Widget;

@@ -1,34 +1,185 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "André Quiz",
-  "description": "Teste os seus conhecimentos sobre.....",
+  "bg": "./../../../assets/images/background.png",
+  "title": "PoliQuiz",
+  "description": "Teste os seus conhecimentos sobre frases famosas na política brasileira e internacional!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/utsbVdr6bwhY4/giphy.gif",
+      "title": "O Brasil condena energicamente todos esses atos de perseguição religiosa e está pronto a colaborar com outros países para a proteção daqueles que se veem oprimidos por causa de sua fé.",
+      "description": "Dito durante um discurso na ONU.",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Dilma",
+        "Bolsonaro",
+        "Padre Fábio de Melo",
+        "Silas Malafaia"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/JSueytO5O29yM/giphy.gif",
+      "title": "A mulher abre o negócio, tem seus filhos, cria seus filhos e se sustenta: tudo isso abrindo o negócio.",
+      "description": "Foi dito em um discurso durante o dia internacional da mulher.",
+      "answer": 2,
+      "alternatives": [
+        "Rita Cadillac",
+        "Marina Silva",
+        "Dilma",
+        "Janaina Paschoal"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/CcLaILAAOhvgc/giphy.gif",
+      "title": "Vamos inventar o amanhã e parar de nos preocupar com o passado.",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Elon Musk",
+        "Trump",
+        "Steve Jobs",
+        "Bill Gates"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif",
+      "title": "Penso, logo existo.",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Platão",
+        "René Descartes",
+        "Aristóteles",
+        "Sócrates"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/Dl2seYrwPvfjO/giphy.gif",
+      "title": "A autosuficiência do Brasil sempre foi insuficiente.",
+      "description": "Entrevistas na Rádio Guaíba e Rádio Gaúcha.",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Dilma",
+        "Bolsonaro",
+        "Lula",
+        "Aécio Neves"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/l44QjgeQ5ium91n9K/giphy.gif",
+      "title": "E lugar de bandido, senhora presidente, onde é livre nas ruas para parbarizar o cidadão de bem impunemente.",
+      "description": "Após um twit da ex-presidenta Dilma afirmando que lugar de criança é na escola em uma discussão sobre a redução da maioridade penal.",
+      "answer": 3,
+      "alternatives": [
+        "Marcelo Rezende",
+        "Datena",
+        "Bolsonaro",
+        "Rachel Sheherazade"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/lQ1nXVifuLqyVAH2Gu/giphy.gif",
+      "title": "Um dia seu risada é um dia desperdiçado",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Charles Chaplin",
+        "Jim Carrey",
+        "Carlos Alberto de Nóbrega",
+        "Walt Disney"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/JbDv1r9JcLKIU/giphy.gif",
+      "title": "Não cuideis que vim trazer a paz à terra, não vim trazer a paz, mas espada.",
+      "description": "Matheus, 10-34",
+      "answer": 3,
+      "alternatives": [
+        "Poncio Pilatos",
+        "Bolsonaro",
+        "Alexandre o Grande",
+        "Jesus"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/6kowdZn2VXQPu/giphy.gif",
+      "title": "Não aceito propaganda de opções sexuais.",
+      "description": "Quando foi questionada se era a favor dos kits anti-homofobia.",
+      "answer": 0,
+      "alternatives": [
+        "Dilma",
+        "Bolsonaro",
+        "Rafinha Bastos",
+        "Fernando Haddad"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/LUIvcbR6yytz2/giphy.gif",
+      "title": "Melhor ser pirata do que marinheiro",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "Jack Sparrow",
+        "Steve Jobs",
+        "Robin Hood",
+        "Mc Kevinho"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/fwQSChHO0d8t4OKmML/giphy.gif",
+      "title": "Até quando as mulheres vão viver precisando aceitar tudo: não é não.",
+      "description": "No Twitter",
+      "answer": 1,
+      "alternatives": [
+        "Letícia Sabatella",
+        "Maísa",
+        "Anitta",
+        "Marielli Franco"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/41xs2swM2yjYOTGJ16/giphy.gif",
+      "title": "Não vejo ela com a energia e o momento é muito tosterona, é um momento muito agressivo e ela tem um psicologia muito avessa a isso.",
+      "description": "Foi dito durante um almoço com empresários da Firjan.",
+      "answer": 3,
+      "alternatives": [
+        "Aécio Neves",
+        "Levi Fidelix",
+        "Bolsonaro",
+        "Ciro Gomes"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/3KbliBOdHlUE8/giphy.gif",
+      "title": "Com 6 anos, eu lutava contra monstros gigantes que eram derrotados e voltavam gigantes.",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Kim Kataguiri",
+        "Kim Jong-un",
+        "Kim Kardashian"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif",
+      "title": "Minha filha de 4 anos seria melhor presidente do que o Trump",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "Kim Kataguiri",
+        "Kim Jong-un",
+        "Kim Kardashian"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/Kc2vv0OAYFSrHEjo1C/giphy.gif",
+      "title": "Naquela época, essas classe dos feios, dos negros e dos homossexuais elas não se ofendiam, elas sabiam que não era para atingir, para sacanear.",
+      "description": "No encontro com Fátima Bernardes",
+      "answer": 1,
+      "alternatives": [
+        "Danillo Gentili",
+        "Renato Aragão (Didi)",
+        "Olavo de Carvalho"
       ]
     }
-  ],
-  "external": [
-    "https://aluraquiz-css.omariosouto.vercel.app/",
-    "https://aluraquiz-marvel.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {

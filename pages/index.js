@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 import QuizBackground from '../src/components/QuizBackground'
 import IndexHead from '../src/components/Head'
+import QuizLogo from '../src/components/QuizLogo/Index'
 import QuizContainer from '../src/components/QuizContainer/Index'
 import Widget from '../src/components/Widget'
-import Link from '../src/components/Link/Index'
 import Form from '../src/components/Form'
 import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
@@ -20,6 +20,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <IndexHead />
       <QuizContainer>
+        <QuizLogo />
         <Widget
           as={motion.section}
           variants={{
@@ -29,13 +30,13 @@ export default function Home() {
           initial="hidden"
           animate="show" >
           <Widget.Header>
-            <h1>Quiz CSS</h1>
+            <h1>PoliQuiz</h1>
           </Widget.Header>
           <Widget.Content>
             <Form name={name} setName={setName}/>
           </Widget.Content>
         </Widget>
-        <Widget
+        {/* <Widget
           as={motion.section}
           transition={{ delay: .5 }}
           variants={{
@@ -70,23 +71,10 @@ export default function Home() {
               })}
             </ul>
           </Widget.Content>
-        </Widget>
-        <Widget
-          as={motion.section}
-          transition={{ delay: 1 }}
-          variants={{
-            show: { opacity: 1, y: '0' },
-            hidden: { opacity: 0, y: '100%' }
-          }}
-          initial="hidden"
-          animate="show" >
-          <Widget.Content>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam architecto minus, dicta cum sit quasi ipsa aliquid voluptatibus itaque pariatur ea? Molestias ipsum architecto tempore eveniet impedit vel iste debitis!</p>
-          </Widget.Content>
-        </Widget>
+        </Widget> */}
         <Footer
           as={motion.footer}
-          transition={{ delay: 1.5 }}
+          transition={{ delay: .5 }}
           variants={{
             show: { opacity: 1, y: '0' },
             hidden: { opacity: 0, y: '100%' }
