@@ -29,9 +29,11 @@ const Button = styled.button`
 
 export default function ButtonWrapper(props) {
 
+  const noText = props.disabled
+
   return (
-    <Button type="submit" disabled={props.disabled}>
-      { props.text }
+    <Button type="submit" disabled={noText} >
+      { noText ? props.textIfDisabled : props.text }
     </Button>
   )
 }

@@ -3,16 +3,12 @@ import styled from 'styled-components'
 import Input from '../Input/Index'
 import Button from '../Button/Index'
 
-const Form = styled.form`
-  display: block;
-`
-
 export default function FormWrapper(props) {
 
   const router = useRouter()
 
   return (
-    <Form
+    <form
       autoComplete="off"
       onSubmit={event => {
       event.preventDefault()
@@ -20,12 +16,12 @@ export default function FormWrapper(props) {
     }}>
 
       <Input setName={props.setName} />
-      <Button
-        name={props.name}
-        pretext={true}
-        text="Vamos jogar!"
-        disable={props.name === 0} />
 
-    </Form>
+      <Button
+        text="Vamos jogar!"
+        disabled={props.name.length === 0}
+        textIfDisabled="Primeiro, digite seu nome..." />
+
+    </form>
   )
 }

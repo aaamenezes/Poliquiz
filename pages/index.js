@@ -30,9 +30,11 @@ export default function Home() {
           initial="hidden"
           animate="show" >
           <Widget.Header>
-            <h1>PoliQuiz</h1>
+            <h1>POLIQUIZ</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>Teste seus conhecimentos sobre política brasileira.</p>
+            <p>Descubra quem disse essa frases icônicas.</p>
             <Form name={name} setName={setName}/>
           </Widget.Content>
         </Widget>

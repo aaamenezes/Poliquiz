@@ -24,8 +24,7 @@ const Widget = styled.div`
 
 Widget.Header = styled.header`
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
   padding: 18px 32px;
   background-color: ${db.theme.colors.blue};
 `

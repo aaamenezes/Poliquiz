@@ -1,5 +1,5 @@
 {
-  "bg": "./../../../assets/images/background.png",
+  "bg": "https://raw.githubusercontent.com/aaamenezes/poliquiz/main/assets/images/background.png",
   "title": "PoliQuiz",
   "description": "Teste os seus conhecimentos sobre frases famosas na política brasileira e internacional!",
   "questions": [
@@ -28,30 +28,6 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/CcLaILAAOhvgc/giphy.gif",
-      "title": "Vamos inventar o amanhã e parar de nos preocupar com o passado.",
-      "description": "",
-      "answer": 2,
-      "alternatives": [
-        "Elon Musk",
-        "Trump",
-        "Steve Jobs",
-        "Bill Gates"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif",
-      "title": "Penso, logo existo.",
-      "description": "",
-      "answer": 1,
-      "alternatives": [
-        "Platão",
-        "René Descartes",
-        "Aristóteles",
-        "Sócrates"
-      ]
-    },
-    {
       "image": "https://media.giphy.com/media/Dl2seYrwPvfjO/giphy.gif",
       "title": "A autosuficiência do Brasil sempre foi insuficiente.",
       "description": "Entrevistas na Rádio Guaíba e Rádio Gaúcha.",
@@ -76,30 +52,6 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/lQ1nXVifuLqyVAH2Gu/giphy.gif",
-      "title": "Um dia seu risada é um dia desperdiçado",
-      "description": "",
-      "answer": 0,
-      "alternatives": [
-        "Charles Chaplin",
-        "Jim Carrey",
-        "Carlos Alberto de Nóbrega",
-        "Walt Disney"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/JbDv1r9JcLKIU/giphy.gif",
-      "title": "Não cuideis que vim trazer a paz à terra, não vim trazer a paz, mas espada.",
-      "description": "Matheus, 10-34",
-      "answer": 3,
-      "alternatives": [
-        "Poncio Pilatos",
-        "Bolsonaro",
-        "Alexandre o Grande",
-        "Jesus"
-      ]
-    },
-    {
       "image": "https://media.giphy.com/media/6kowdZn2VXQPu/giphy.gif",
       "title": "Não aceito propaganda de opções sexuais.",
       "description": "Quando foi questionada se era a favor dos kits anti-homofobia.",
@@ -109,18 +61,6 @@
         "Bolsonaro",
         "Rafinha Bastos",
         "Fernando Haddad"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/LUIvcbR6yytz2/giphy.gif",
-      "title": "Melhor ser pirata do que marinheiro",
-      "description": "",
-      "answer": 1,
-      "alternatives": [
-        "Jack Sparrow",
-        "Steve Jobs",
-        "Robin Hood",
-        "Mc Kevinho"
       ]
     },
     {
@@ -145,28 +85,6 @@
         "Levi Fidelix",
         "Bolsonaro",
         "Ciro Gomes"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/3KbliBOdHlUE8/giphy.gif",
-      "title": "Com 6 anos, eu lutava contra monstros gigantes que eram derrotados e voltavam gigantes.",
-      "description": "",
-      "answer": 0,
-      "alternatives": [
-        "Kim Kataguiri",
-        "Kim Jong-un",
-        "Kim Kardashian"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif",
-      "title": "Minha filha de 4 anos seria melhor presidente do que o Trump",
-      "description": "",
-      "answer": 2,
-      "alternatives": [
-        "Kim Kataguiri",
-        "Kim Jong-un",
-        "Kim Kardashian"
       ]
     },
     {
