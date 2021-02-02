@@ -1,9 +1,14 @@
-export default function Radio(props) {
+import styled from 'styled-components'
+
+const Radio = styled.input`
+  display: none;
+`
+
+export default function RadioWrapper(props) {
   return (
-    <input
+    <Radio
       type="radio"
       name={props.questionId}
-      style={{ display: 'none' }}
       onChange={ () => props.setSelectedAlternative(props.index)} />
   )
 }

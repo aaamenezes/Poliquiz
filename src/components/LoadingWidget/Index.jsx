@@ -1,14 +1,15 @@
 import Widget from '../Widget'
+import db from '../../../db.json'
 
 export default function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        Carregando perguntas...
       </Widget.Header>
-      <Widget.Content>
-        [Desafio do loading]
-      </Widget.Content>
+      <Widget.Image>
+        <img src={db.loading} />
+      </Widget.Image>
     </Widget>
   )
 }

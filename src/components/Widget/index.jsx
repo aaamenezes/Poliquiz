@@ -2,21 +2,20 @@ import styled from 'styled-components'
 import db from '../../../db.json'
 
 const Widget = styled.div`
-  margin: 24px 0;
   border: none;
   background-color: ${db.theme.colors.black};
   border-radius: 4px;
   overflow: hidden;
 
   h1, h2, h3 {
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.5;
     margin: 0;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1;
   }
@@ -25,25 +24,40 @@ const Widget = styled.div`
 Widget.Header = styled.header`
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 18px 32px;
   background-color: ${db.theme.colors.blue};
 `
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px;
+
+  h2 {
+    font-style: italic;
+    &::before {
+      content: '"...';
+    }
+    &::after {
+      content: '..."';
+    }
+  }
    
-   & > *:first-child {
-     margin-top: 0;
-   }
+  & > *:first-child {
+    margin-top: 0;
+  }
 
-   & > *:last-child {
-     margin-bottom: 0;
-   }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
 
-   ul {
-     list-style: none;
-     padding: 0;
-   }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+`
+
+Widget.Image = styled.div`
+  padding: 0;
 `
 
 Widget.Topic = styled.a`
@@ -60,7 +74,7 @@ Widget.Topic = styled.a`
 
   &:hover,
   &:focus {
-    background-color: ${db.theme.colors.lightBlue};
+    background-color: ${db.theme.colors.darkBlue};
   }
 
   &[data-selected=true] {
@@ -76,4 +90,4 @@ Widget.Topic = styled.a`
   }
 `
 
-export default Widget;
+export default Widget

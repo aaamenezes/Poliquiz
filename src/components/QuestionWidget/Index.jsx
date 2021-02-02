@@ -3,9 +3,7 @@ import { useState } from 'react'
 import Widget from '../../components/Widget'
 import Button from '../../components/Button/Index'
 import Radio from '../Radio/Index'
-
 import BackLinkArrow from '../BackLinkArrow/Index'
-
 import Success from '../Success/Index'
 import Wrong from '../Wrong/Index'
 
@@ -23,17 +21,20 @@ export default function QuestionWidget(props) {
         <h3>Pergunta {props.questionIndex + 1} de {props.totalQuestions}</h3>
       </Widget.Header>
 
-      <img
-        alt="Descrição"
-        style={{
-          width: '100%',
-          height: '140px',
-          objectFit: 'cover',
-        }}
-        src={props.question.image} />
+      <Widget.Image>
+        <img
+          alt="Descrição"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover',
+          }}
+          src={props.question.image} />
+      </Widget.Image>
 
       <Widget.Content>
 
+        <p>Quem disse essa frase?</p>
         <h2>{props.question.title}</h2>
         <p>{props.question.description}</p>
 
@@ -74,12 +75,13 @@ export default function QuestionWidget(props) {
           </pre> */}
 
           <Button
-            disabled={selectedAlternative === undefined}
             text={
               selectedAlternative === undefined ?
               "Marque alguma alternativa" :
               "Enviar"
-            } />
+            }
+            disabled={selectedAlternative === undefined}
+            textIfDisabled="Marque alguma alternativa. Ou chute." />
         </form>
 
         {isQuestionSubmited && isCorrect && <Success /> }

@@ -2,6 +2,7 @@
   "bg": "https://raw.githubusercontent.com/aaamenezes/poliquiz/main/assets/images/background.png",
   "title": "PoliQuiz",
   "description": "Teste os seus conhecimentos sobre frases famosas na política brasileira e internacional!",
+  "loading": "https://media.giphy.com/media/l3nWhI38IWDofyDrW/giphy.gif",
   "questions": [
     {
       "image": "https://media.giphy.com/media/utsbVdr6bwhY4/giphy.gif",

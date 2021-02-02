@@ -4,7 +4,7 @@ import db from '../../../db.json'
 const Input = styled.input`
   display: block;
   width: 100%;
-  padding: 10px 5px;
+  padding: 15px 10px;
   margin-bottom: 15px;
   border: 1px solid ${db.theme.colors.white};
   border-radius: 3px;

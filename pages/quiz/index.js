@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import QuizBackground from '../../src/components/QuizBackground'
 import IndexHead from '../../src/components/Head'
 import QuizContainer from '../../src/components/QuizContainer/Index'
@@ -30,7 +31,7 @@ export default function QuizPage() {
     // fetch() de mentira
     setTimeout(() => {
       setScreenState(screenStates.quiz)
-    }, 700);
+    }, 100);
   }, [] )
 
   const handleSubmitQuiz = () => {
