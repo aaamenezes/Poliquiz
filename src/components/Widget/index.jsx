@@ -11,13 +11,11 @@ const Widget = styled.div`
     /* font-size: 16px; */
     font-weight: 700;
     line-height: 1.5;
-    margin: 0;
   }
 
   p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1;
   }
 `
 
@@ -34,9 +32,12 @@ Widget.Content = styled.div`
 
   h2 {
     font-style: italic;
+    margin-bottom: 20px;
+
     &::before {
       content: '"...';
     }
+
     &::after {
       content: '..."';
     }

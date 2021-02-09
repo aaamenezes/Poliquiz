@@ -31,7 +31,7 @@ export default function QuizPage() {
     // fetch() de mentira
     setTimeout(() => {
       setScreenState(screenStates.quiz)
-    }, 100);
+    }, 3000);
   }, [] )
 
   const handleSubmitQuiz = () => {
